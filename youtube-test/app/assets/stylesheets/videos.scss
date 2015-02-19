@@ -1,0 +1,12 @@
+// Place all the styles related to the videos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.js-video {
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+ 
+.js-video.vimeo {
+  padding-top: 0;
+}

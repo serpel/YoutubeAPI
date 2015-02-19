@@ -1,0 +1,13 @@
+<h1>Videos#index</h1>
+<p>Find me in app/views/videos/index.html.erb</p>
+
+<% @videos.each do |v| %>
+<p> <%= v.url %> </p>
+<p> 
+  <%= link_to 'show', v %> | 
+  <%= link_to 'edit', edit_video_path(v) %> |
+  <%= link_to 'delete', videos_delete_path(:id => v.id) %>
+</p>
+<% end %>
+
+<%= link_to 'New Video', new_video_path %>

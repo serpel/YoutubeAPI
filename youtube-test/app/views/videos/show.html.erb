@@ -1,0 +1,19 @@
+<h1>Videos#show</h1>
+
+<p>
+<%= @video.url %>
+</p>
+
+<!--<iframe width="550" height="345" src=<%= "#{@video.url}" %>></iframe>-->
+<!--
+<iframe width="550" height="345"
+src="http://www.youtube.com/embed/XGSy3_Czz8k" allowfullscreen frameborder="0">
+</iframe>-->
+
+<div class="js-video [vimeo, widescreen]">
+  <iframe width="560" height="315" src="<%= @video.url %>" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+  <%= link_to 'back', videos_path %>
+</p>
